@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- main body -->
+    <div class="container">
+
+        <!-- heading with h1,h3 -->
+        <div class="heading">
+            <h1>US Dollar to Canadian Dollar.</h1>
+            <h3>Convert USD to CAD at the real exchange rate</h3>
+        </div>
+
+        <!-- conversion contents -->
+        <div class="conversion-form">
+           
+            <!-- leftpart for currency selection -->
+            <div class="leftside">
+                <label for="fromCurrency">From :</label>
+                <select class="left" id="fromCurrency">
+                    <option value="usd">USD</option>
+                    <option value="cad">CAD</option>
+                </select>
+            </div>
+            <!-- rightpart for selecting a currency -->
+            <div class="rightside">
+                <label for="toCurrency">Converted To :</label>
+                <select class="right" id="toCurrency">
+                    <option value="usd">USD</option>
+                    <option value="cad">CAD</option>
+                </select>
+            </div>            
+        </div>
+
+        <!-- input box for the amount -->
+        <div class="conversion_value">
+            <label for="amount">Amount :</label>
+            <input class="inpt" type="number" id="amount" placeholder="Enter amount">
+        </div>
+
+        <!-- button for conversion -->
+        <div class="button">
+            <button class="btn" onclick="convertCurrency()">Convert</button>
+        </div>
+
+        <!-- this div is for showing the result -->
+        <div class="result"><p id="result"></p></div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
